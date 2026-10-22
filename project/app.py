@@ -26,7 +26,9 @@ SECRET_KEY = os.getenv("SECRET_KEY", "local-development-only")
 url = os.getenv("DATABASE_URL", f"sqlite:///{Path(basedir).joinpath(DATABASE)}")
 
 if url.startswith("postgres://"):
-    url = url.replace("postgres://", "postgresql://", 1)
+    url = url.replace("postgres://", "postgresql+psycopg2://", 1)
+elif url.startswith("postgresql://"):
+    url = url.replace("postgresql://", "postgresql+psycopg2://", 1)
 
 SQLALCHEMY_DATABASE_URI = url
 SQLALCHEMY_TRACK_MODIFICATIONS = False
