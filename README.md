@@ -4,6 +4,12 @@ A Flask blogging app for ECE444 PRA6. Users can view and search posts, log in an
 
 Adapted from the [course tutorial](https://github.com/shuruizUofT/flaskr-tdd). The original MIT license is retained in LICENSE.
 
+## Live website
+
+https://ece444-pra6-tdd-1rrg.onrender.com/
+
+Hosted on Render with PostgreSQL. Use username `admin` and the password configured privately in Render.
+
 ## Run locally
 
 ```sh
@@ -32,7 +38,7 @@ The suite contains 13 cases covering the homepage, database, login/logout, posti
 - Set `SECRET_KEY`, `APP_USERNAME`, and `APP_PASSWORD` privately in Render.
 - Without `DATABASE_URL`, the app uses local SQLite at `project/flaskr.db`.
 
-See [PRA6_GUIDE.md](PRA6_GUIDE.md) for deployment instructions, test explanations, and the TA demonstration checklist. Deployment is not yet verified.
+See [PRA6_GUIDE.md](PRA6_GUIDE.md) for deployment instructions, test explanations, and the TA demonstration checklist. Homepage, login/logout, posting, search, deletion, and unauthorized deletion protection were verified on the live website on October 22, 2026.
 
 ## Project files
 

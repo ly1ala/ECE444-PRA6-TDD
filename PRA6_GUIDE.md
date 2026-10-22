@@ -63,4 +63,4 @@ Submit https://github.com/ly1ala/ECE444-PRA6-TDD to Quercus. Attend your assigne
 
 ## Verified status
 
-13 tests passed locally. Black formatting and Flake8 passed. Hosting and GitHub publication have not been verified.
+13 tests passed locally, and GitHub Actions passed tests, Black, and Flake8. Code is published at the repository above. The live Render app at https://ece444-pra6-tdd-1rrg.onrender.com/ was verified for homepage, failed/successful login, posting, search, deletion, logout, and unauthorized deletion protection on October 22, 2026. The hosting database is PostgreSQL; keep its connection credentials private.
